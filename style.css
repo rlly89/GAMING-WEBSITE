@@ -1,200 +1,270 @@
-/* RLLY89 Gaming Hub CSS */
+/* ==========================
+   IMMANUEL MBIYU PORTFOLIO
+   Gaming Theme CSS
+========================== */
 
-body {
-    background-color: #0b0b1a;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
-
-/* Main heading */
-
-h1 {
-    text-align: center;
-    font-size: 45px;
-    text-shadow: 0 0 15px cyan;
+body{
+    font-family:'Orbitron',sans-serif;
+    background:#050816;
+    color:#fff;
+    line-height:1.6;
 }
 
+/* Navigation */
 
-/* Other headings */
-
-h2 {
-    text-align: center;
-    color: #00ffff;
-    font-size: 30px;
-    margin-top: 30px;
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,.9);
+    z-index:999;
 }
 
-h3 {
-    color: #ff00ff;
-    font-size: 25px;
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
 }
 
-
-/* Paragraph styling */
-
-p {
-    font-size: 18px;
-    line-height: 1.6;
+.logo{
+    color:#00e5ff;
+    font-size:30px;
 }
 
-
-/* Images */
-
-img {
-    width: 250px;
-    height: 160px;
-    object-fit: cover;
-    margin: 10px;
-    border-radius: 15px;
-    border: 3px solid cyan;
+.logo span{
+    color:#ff0066;
 }
 
-
-/* Image hover effect */
-
-img:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
+.nav-links{
+    list-style:none;
+    display:flex;
 }
 
-
-/* Videos */
-
-video {
-    margin: 10px;
-    border: 3px solid purple;
-    border-radius: 15px;
+.nav-links li{
+    margin-left:30px;
 }
 
-
-/* Audio */
-
-audio {
-    width: 350px;
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
 }
 
-
-/* Form */
-
-form {
-    background-color: #15152b;
-    padding: 25px;
-    width: 350px;
-    margin: auto;
-    border-radius: 15px;
-    box-shadow: 0 0 15px cyan;
+.nav-links a:hover{
+    color:#00e5ff;
 }
 
+/* Hero */
 
-label {
-    font-size: 18px;
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.7),
+    rgba(0,0,0,.7)),
+    url("images/background.jpg");
+    background-size:cover;
+    background-position:center;
 }
 
-
-input {
-    width: 90%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 8px;
-    border: none;
+.hero h1{
+    font-size:70px;
+    color:#00e5ff;
+    margin:20px 0;
 }
 
-
-/* Submit button */
-
-input[type="submit"] {
-    background-color: cyan;
-    color: black;
-    font-size: 18px;
-    cursor: pointer;
-    font-weight: bold;
+.hero h2{
+    color:#ff0066;
 }
 
-
-input[type="submit"]:hover {
-    background-color: lime;
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
 }
 
-
-/* Table */
-
-table {
-    width: 90%;
-    margin: auto;
-    border-collapse: collapse;
-    background-color: #15152b;
+.btn{
+    padding:15px 35px;
+    background:#00e5ff;
+    color:#000;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.4s;
 }
 
-
-th {
-    background-color: purple;
-    color: white;
-    font-size: 18px;
+.btn:hover{
+    background:#ff0066;
+    color:white;
+    box-shadow:0 0 25px #ff0066;
 }
 
+/* Sections */
 
-td, th {
-    padding: 12px;
-    text-align: center;
-    border: 2px solid cyan;
+section{
+    padding:120px 10%;
 }
 
-
-tr:hover {
-    background-color: #33334d;
+section h2{
+    text-align:center;
+    color:#00e5ff;
+    margin-bottom:40px;
+    font-size:40px;
 }
 
+/* About */
 
-/* Horizontal line */
-
-hr {
-    border: 2px solid cyan;
-    margin: 30px 0;
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
 }
 
+/* Skills */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#11182d;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:.4s;
+    border:2px solid transparent;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#00e5ff;
+    box-shadow:0 0 20px #00e5ff;
+}
+
+.card h3{
+    color:#00e5ff;
+    margin-bottom:15px;
+}
+
+/* Gallery */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+    transition:.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #00e5ff;
+}
+
+/* Contact */
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:15px;
+    margin:15px 0;
+    border:none;
+    border-radius:10px;
+    background:#11182d;
+    color:white;
+}
+
+textarea{
+    height:170px;
+}
+
+button{
+    padding:15px 40px;
+    background:#00e5ff;
+    color:black;
+    border:none;
+    border-radius:30px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.4s;
+}
+
+button:hover{
+    background:#ff0066;
+    color:white;
+}
 
 /* Footer */
 
-footer {
-    text-align: center;
-    background-color: #15152b;
-    padding: 15px;
-    margin-top: 30px;
-    color: cyan;
+footer{
+    text-align:center;
+    padding:30px;
+    background:#000;
 }
 
+/* Scroll Animation */
 
-/* Mobile responsive */
+.hidden{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
 
-@media screen and (max-width: 700px) {
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
 
-    body {
-        padding: 10px;
-    }
+/* Responsive */
 
+@media(max-width:768px){
 
-    img {
-        width: 90%;
-        height: auto;
-    }
+.navbar{
+    flex-direction:column;
+}
 
+.nav-links{
+    flex-direction:column;
+    text-align:center;
+    margin-top:15px;
+}
 
-    video {
-        width: 90%;
-    }
+.nav-links li{
+    margin:12px 0;
+}
 
+.hero h1{
+    font-size:42px;
+}
 
-    form {
-        width: 90%;
-    }
+.hero p{
+    font-size:18px;
+}
 
-
-    table {
-        width: 100%;
-        font-size: 14px;
-    }
+section h2{
+    font-size:30px;
+}
 
 }
