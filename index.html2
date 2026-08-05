@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immanuel Mbiyu | Gaming Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<header>
+    <nav class="navbar">
+        <h1 class="logo">IMMANUEL<span>MBIYU</span></h1>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#gaming">Gaming</a></li>
+            <li><a href="#basketball">Basketball</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+
+    <div class="hero-content">
+        <h2>Hello, I'm</h2>
+
+        <h1>Immanuel Mbiyu</h1>
+
+        <p>
+            Gamer • Basketball Player • Web Developer
+        </p>
+
+        <a href="#about" class="btn">
+            Explore My World
+        </a>
+
+    </div>
+
+</section>
+
+<!-- About -->
+
+<section id="about" class="about">
+
+<h2>About Me</h2>
+
+<p>
+
+Welcome! My name is <strong>Immanuel Mbiyu</strong>.
+
+I love gaming, basketball and building modern websites.
+
+I enjoy learning new technology and improving my programming skills every day.
+
+</p>
+
+</section>
+
+<!-- Skills -->
+
+<section id="skills" class="skills">
+
+<h2>My Skills</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>HTML5</h3>
+<p>Creating modern websites.</p>
+</div>
+
+<div class="card">
+<h3>CSS3</h3>
+<p>Beautiful responsive designs.</p>
+</div>
+
+<div class="card">
+<h3>JavaScript</h3>
+<p>Interactive web experiences.</p>
+</div>
+
+<div class="card">
+<h3>Gaming</h3>
+<p>Strategy, action and adventure games.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Gaming -->
+
+<section id="gaming" class="gaming">
+
+<h2>Gaming Passion</h2>
+
+<p>
+
+Gaming inspires creativity and teamwork.
+
+I enjoy discovering new games and experiencing exciting adventures.
+
+</p>
+
+<div class="gallery">
+
+<img src="images/game1.jpg" alt="Gaming Image 1">
+
+<img src="images/game2.jpg" alt="Gaming Image 2">
+
+<img src="images/game3.jpg" alt="Gaming Image 3">
+
+</div>
+
+</section>
+
+<!-- Basketball -->
+
+<section id="basketball" class="basketball">
+
+<h2>Basketball</h2>
+
+<p>
+
+Basketball is one of my favorite sports.
+
+It teaches teamwork, discipline, determination and leadership.
+
+</p>
+
+<div class="gallery">
+
+<img src="images/basketball1.jpg" alt="Basketball">
+
+<img src="images/basketball2.jpg" alt="Basketball">
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact" class="contact">
+
+<h2>Contact Me</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">
+Send Message
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 Immanuel Mbiyu | Gaming Portfolio</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
