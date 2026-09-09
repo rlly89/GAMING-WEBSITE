@@ -35,8 +35,8 @@ function blueBackground() {
 function whiteBackground() { 
     document.body.style.backgroundColor = "white"; 
 
-function darkmmodeBackground(){
-	document.body.style.backgroundcolor = "darkmode";
+function maroonBackground(){
+	document.body.style.backgroundcolor = "maroon";
 
 }    
 function changeMessage() {
